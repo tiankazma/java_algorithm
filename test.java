@@ -4,14 +4,47 @@ public class test{
 		System.out.println(ans);
 	}
 
+	//test_step()
+	public static void test_step(String ans, int nums[])
+	{
+		for (int i=0; i<nums.length; i++)
+		{
+			ans += nums[i] + " ";
+		}
+
+		sys(ans);
+	}
+
+	//testing()
+	public static String get_ans(String ans, int nums[])
+	{
+		for (int i=0; i<nums.length; i++)
+		{
+			ans += nums[i] + " ";
+		}
+
+		return ans;
+	}
+
 	public static void main(String[] args) {
 		sys("Testing\n");
 
-		int nums[] = {6,3,8,2,9,1};
+		// testing cases
+		// int nums[] = {6,3,8,2,9,1};
+		int nums[] = {2,4,4,5,7,1,1,9,3};
+		// int nums[] = {4,3,1,2};
 
-		//insertion sort
-		sys("Insertion Sort:");
-		sys(insertion.sort(nums));
+		//counting sort
+		sys("Counting Sort");
+		sys(counting.sort(nums));
+
+		//bucket sort
+		// sys("Bucket Sort:");
+		// sys(bucket.sort(nums));
+
+		// //insertion sort
+		// sys("Insertion Sort:");
+		// sys(insertion.sort(nums));
 
 		// //cocktail sort
 		// sys("Cocktail Sort (double-bubble sort):");
