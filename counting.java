@@ -25,14 +25,18 @@ public class counting{
 		test.sys("\n");
 		// alocating the nums[] items into the buckets
 		for(int i=0; i<len; i++){
-			//the value of box[i] : allocating the address of value nums[i]
-			// in buckets[]
-			buckets[box[i]] = nums[i];
+			// get the quentity of same-valued item
+			int time = 0;
+			
+			for(int j=0; j<len; j++){
+				if(nums[i] == nums[j]){
+					time++;
+				}
+			}
 
-			//if there are same valued item in nums[]
-			// the following item will be allocated in folloing addresses
-			if(buckets[box[i]] == nums[i] && box[i] != len - 1){
-				buckets[box[i] + 1] = nums[i];
+			// insert into the buckets
+			for(int j=0; j<time; j++){
+				buckets[box[i] + j] = nums[i];
 			}
 
 			test.test_step("Process :\t" + ans, buckets);

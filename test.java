@@ -30,8 +30,9 @@ public class test{
 		sys("Testing\n");
 
 		// testing cases
-		// int nums[] = {6,3,8,2,9,1};
-		int nums[] = {2,4,4,5,7,1,1,9,3};
+		int nums[] = {6,3,8,2,9,1,6,8,1};
+		// int nums[] = {3,1,4,3,1,4,3,1};
+		// int nums[] = {2,2,2,3,3,8,8,8,1,1,1,1,5,5};
 		// int nums[] = {4,3,1,2};
 
 		//counting sort
