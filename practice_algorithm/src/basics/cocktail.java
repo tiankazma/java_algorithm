@@ -1,3 +1,5 @@
+package basics;
+
 public class cocktail{
 	public static String get_ans(String ans, int nums[]){
 		for(int i=0; i<nums.length; i++){

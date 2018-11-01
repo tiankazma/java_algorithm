@@ -1,3 +1,5 @@
+package basics;
+
 public class bubble_sort{
 	public static void step(int nums[]){
 		for(int i=0; i<nums.length; i++){

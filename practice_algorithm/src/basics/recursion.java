@@ -1,3 +1,5 @@
+package basics;
+
 public class recursion{
 	// factorial
 	public static int factorial(int n){

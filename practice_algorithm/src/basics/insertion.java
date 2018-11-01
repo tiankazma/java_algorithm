@@ -1,3 +1,5 @@
+package basics;
+
 public class insertion{
 	// sort()
 	public static String sort(int nums[])

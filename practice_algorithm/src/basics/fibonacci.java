@@ -1,3 +1,5 @@
+package basics;
+
 public class fibonacci{
 	//simple fibonacci
 	public void simple_fib(int i, int j, int t){

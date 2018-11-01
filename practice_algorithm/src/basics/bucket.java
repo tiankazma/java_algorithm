@@ -1,3 +1,5 @@
+package basics;
+
 public class bucket{
 	public static String sort(int nums[]){
 		String ans = "";
