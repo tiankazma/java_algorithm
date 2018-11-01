@@ -30,14 +30,23 @@ public class test{
 		sys("Testing\n");
 
 		// testing cases
-		int nums[] = {6,3,8,2,9,1,6,8,1};
+		// int nums[] = {6,3,8,2,9,1,6,8,1};
 		// int nums[] = {3,1,4,3,1,4,3,1};
-		// int nums[] = {2,2,2,3,3,8,8,8,1,1,1,1,5,5};
+		int nums[] = {2,8,5,1,3,1,4,6,2,1,1};
 		// int nums[] = {4,3,1,2};
 
+		//merge sort
+		// sys("Merge Sort:");
+		// sys(merge.sort(nums));
+
+		//recursion:
+		// using recursion to implement the factorial of n
+		int n = 6;
+		sys("Factorial: " + recursion.get_result(n) + "\n");
+
 		//counting sort
-		sys("Counting Sort");
-		sys(counting.sort(nums));
+		// sys("Counting Sort");
+		// sys(counting.sort(nums));
 
 		//bucket sort
 		// sys("Bucket Sort:");
