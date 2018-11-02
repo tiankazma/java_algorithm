@@ -39,8 +39,9 @@ public class test {
 
 		// recursion:
 		// using recursion to implement the factorial of n
-		int n = 6;
-		sys("Factorial: " + recursion.get_result(n) + "\n");
+		int n = 13;
+		// sys("Factorial of " + String.valueOf(n) + " is : " + recursion.get_result(n) + "\n");
+		sys("Decimal : " + String.valueOf(n) + " ---> Binary : " + recursion.get_result(n) + "\n");
 
 		// counting sort
 		// sys("Counting Sort");
