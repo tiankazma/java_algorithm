@@ -1,34 +1,30 @@
 package basics;
 
-public class insertion{
+public class insertion {
 	// sort()
-	public static String sort(int nums[])
-	{
+	public static String sort(int nums[]) {
 		String ans = "";
 
-		//body
+		// body
 		// original nums
-		// test.test_step(ans, nums);
+		test.test_step("Start:\t" + ans, nums);
 
-		//sorting
-		for(int i=1; i<nums.length; i++)
-		{
-			for(int j=0; j<nums.length; j++)
-			{
-				if(nums[i] < nums[j])
-				{
-					int temp = nums[j];
-					nums[j] = nums[i];
-					nums[i] = temp;
+		// sorting
+		for (int i = 1; i < nums.length; i++) {
+			int current = nums[i];
+
+			for (int j = i - 1; j >= 0; j--) {
+				if (nums[j] > current) {
+					int temp = nums[j + 1];
+					nums[j + 1] = nums[j];
+					nums[j] = temp;
 				}
-			// step test
-			// test.test_step(ans + i + " : ", nums);
+				
+				test.test_step(ans, nums);
 			}
+			test.sys("--- --- ---");
 		}
 
-		//get return value
-		ans = test.get_ans(ans, nums);
-
-		return ans;
+		return test.get_ans("End:\t" + ans, nums);
 	}
 }
