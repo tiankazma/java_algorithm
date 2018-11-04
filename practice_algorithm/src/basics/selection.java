@@ -8,19 +8,26 @@ public class selection {
 		System.out.println(test.get_ans("Original:\t" + ans, nums));
 
 		// sorting
-		int x = nums[0];
+		// x : using to store the address of exchanging target
+		// y : value of smallest item
+		int x = 0, y = 0;
 
-		if (nums.length < 2) {
-			ans += x;
-		} else {
-			for (int j = 0; j < nums.length; j++) {
-				for (int i = j; i < nums.length; i++) {
-					if (nums[i] < x) {
-						x = nums[i];
-					}
+		for (int i = 0; i < nums.length - 1; i++) {
+			y = nums[i];
+			for (int j = i + 1; j < nums.length; j++) {
+				if (nums[j] <= y) {
+					x = j;
+					y = nums[j];
 				}
-				ans += x;
+				String str = "--> nums[i] = " + String.valueOf(nums[i]) + " --- y = " + String.valueOf(y);
+				test.sys(str);
 			}
+
+			y = nums[i];
+			nums[i] = nums[x];
+			nums[x] = y;
+
+			test.test_step(ans, nums);
 		}
 
 		return test.get_ans(ans, nums);
