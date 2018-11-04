@@ -36,6 +36,10 @@ public class test {
 		// merge sort
 		// sys("Merge Sort:");
 		// sys(merge.sort(nums));
+		
+		// shell sort
+		sys("Shell Sort:");
+		sys(shell.sort(nums));
 
 		// selection sort
 //		sys("Selection Sort: ");
@@ -58,8 +62,8 @@ public class test {
 		// sys(bucket.sort(nums));
 
 		 //insertion sort
-		 sys("Insertion Sort:");
-		 sys(insertion.sort(nums));
+//		 sys("Insertion Sort:");
+//		 sys(insertion.sort(nums));
 
 		// //cocktail sort
 		// sys("Cocktail Sort (double-bubble sort):");
