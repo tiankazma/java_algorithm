@@ -36,12 +36,18 @@ public class test {
 		// merge sort
 		// sys("Merge Sort:");
 		// sys(merge.sort(nums));
+		
+		// selection sort
+		sys("Selection Sort: ");
+		sys("Final Output:\t" + selection.sort(nums));
 
 		// recursion:
 		// using recursion to implement the factorial of n
-		int n = 13;
-		// sys("Factorial of " + String.valueOf(n) + " is : " + recursion.get_result(n) + "\n");
-		sys("Decimal : " + String.valueOf(n) + " ---> Binary : " + recursion.get_result(n) + "\n");
+		// int n = 13;
+		// sys("Factorial of " + String.valueOf(n) + " is : " + recursion.get_result(n)
+		// + "\n");
+		// sys("Decimal : " + String.valueOf(n) 
+		// 	+ " ---> Binary : " + recursion.get_result(n) + "\n");
 
 		// counting sort
 		// sys("Counting Sort");
